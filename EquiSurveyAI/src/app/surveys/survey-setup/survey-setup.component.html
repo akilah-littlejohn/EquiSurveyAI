@@ -1,0 +1,33 @@
+<h1>Survey Setup & Jurisdiction Selection</h1>
+<form action="">
+    <mat-form-field class="full-width">
+        <mat-label> Survey Title</mat-label>
+        <input matInput placeholder="Enter survey title">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Industry or Topic</mat-label>
+        <mat-select formControlName="jurisdictions" multiple>
+            <mat-option value="Healthcare">Healthcare</mat-option>
+            <mat-option value="Legal">Legal</mat-option>
+            <mat-option value="Education">Education</mat-option>
+            <mat-option value="Technology">Technology</mat-option>
+            <mat-option value="Finance">Finance</mat-option>
+            
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Target Jurisdictions</mat-label>
+        <mat-select formControlName="jurisdictions" multiple>
+            <mat-option value="US">United States</mat-option>
+            <mat-option value="EU">European Union</mat-option>
+            <mat-option value="CA">Canada</mat-option>
+        </mat-select>
+    </mat-form-field>
+</form>
+
+
+<p> Selected jurisdictions wiil effect compliance and legal requirements</p>
+
+<button mat-raised-button color="primary" type="submit">Next</button>
